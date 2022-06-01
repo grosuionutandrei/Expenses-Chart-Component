@@ -1,0 +1,29 @@
+.expenses_balance {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(960px / 2);
+  background-color: #ff8080;
+  color: #fff;
+  border: 1px solid #ff8080;
+  border-radius: 5px;
+}
+
+.expenses_balance__sold {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 200;
+  font-size: medium;
+}
+.expenses_balance__logo {
+  margin-right: 20px;
+}
+.expenses_balance__amount {
+  font-weight: 400;
+  font-size: x-large;
+}

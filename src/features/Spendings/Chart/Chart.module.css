@@ -1,0 +1,30 @@
+.expenses_spending__chart {
+  border-bottom: 3px solid #f7e9dc;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+
+.expenses_spending__chart__amount__hidden {
+  visibility: hidden;
+}
+.expenses_spending__chart__amount__visibile {
+  visibility: visible;
+}
+
+.expenses_spending__chart__column {
+  position: absolute;
+  bottom: 30px;
+  width: 30px;
+  background-color: #ec755d;
+  transform: rotate(360deg);
+  border: 1px solid #ec755d;
+  border-radius: 5px;
+}
+
+.expenses_spending__chart__column__today {
+  background-color: #76b5bc;
+  border: 1px solid #76b5bc;
+}

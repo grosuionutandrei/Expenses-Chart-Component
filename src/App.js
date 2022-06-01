@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import { Balance } from './Balance/Balance';
+import { SpendingContainer } from './features/Spendings/SpendingContainer/SpendingContainer';
+import { Title } from './features/Spendings/Title/Title';
+import { Chart } from './features/Spendings/Chart/Chart';
 
 function App() {
+  const balance = () => {
+    return 921.48;
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Balance balance={`$${balance()}`} />
+      <SpendingContainer>
+        <Title title={'Spending - Last 7 days'} />
+        <Chart monthBalance={balance()} />
+      </SpendingContainer>
     </div>
   );
 }
