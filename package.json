@@ -18,7 +18,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "start:server": "json-server-auth -p 3005 --routes routes.json --watch db.json"
+    "start:server": "json-server-auth -p 3005 --routes routes.json --watch db.json",
+    "homepage": "https://grosuionutandrei.github.io/Expenses-Chart-Component/"
   },
   "eslintConfig": {
     "extends": [
